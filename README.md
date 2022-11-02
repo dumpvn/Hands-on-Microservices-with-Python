@@ -1,3 +1,11 @@
+# Up and Running
+
+```ps1
+docker build -t test .
+docker run -it --rm -p 3001:5000 --name test test
+docker rmi --force test
+```
+
 # Hands-On Microservices with Python [Video]
 This is the code repository for [Hands-On Microservices with Python [Video]](https://www.packtpub.com/application-development/hands-microservices-python-video?utm_source=github&utm_medium=repository&utm_campaign=9781789132045), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
 

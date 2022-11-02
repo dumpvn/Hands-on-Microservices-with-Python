@@ -1,6 +1,7 @@
-FROM python:3-alpine
+# FROM python:3-alpine
+FROM python:3.7-alpine3.15
 
-MAINTAINER Peter Fisher
+LABEL MAINTAINER="Peter Fisher"
 
 COPY ./app/requirements.txt /app/requirements.txt
 
@@ -14,4 +15,3 @@ RUN apk add --update \
 COPY ./app /app
 
 CMD python app.py run -h 0.0.0.0
-
